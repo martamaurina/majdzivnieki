@@ -1,0 +1,39 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #443730;
+    display: flex; 
+    justify-content: center;
+  }
+
+  li {
+    float: left;
+    border-right: 1px;
+  }
+
+  li:last-child {
+    border-right: none;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 21px 16px;
+    text-decoration: none;
+    transition: 0.4s;
+    font-family: Monaco, monospace;
+    font-size: 16px;
+  }
+
+  li a:hover:not(.active) {
+    background-color: #786452;
+    border-radius: 2px;
+  }
+
+  .active {
+    background-color: #786452;
+    border-radius: 2px;
+  }
