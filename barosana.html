@@ -1,17 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
-    <body>
-        <ul>
-            <li><a href="index.html">Sākumlapa</a></li>
-            <li><a class = "active" href="barosana.html">Uzturs</a></li>
-            <li><a href="veseliba.html">Veselība</a></li>
-            <li><a href="apmaciba.html">Apmācība</a></li>
-            <li><a href="rupes.html">Rūpēšanās</a></li>
-            <li><a href="iegade.html">Iegāde</a></li>
-          </ul>
-    </body>
-    <!--Kādas sajūtas būt hot? Labas-->
+    <title>Kaķa barošana un uzturs</title>
+    <script>
+        function calculateFeeding() {
+            var age = document.getElementById('age').value;
+            var weight = document.getElementById('weight').value;
+            var result = "";
+            if (age <= 6) {
+                result = "Jūsu kaķēnam ieteicams ēst 4-5 reizes dienā, aptuveni " + (weight * 50) + " gramus dienā.";
+            } else {
+                result = "Jūsu kaķēnam ieteicams ēst 2-3 reizes dienā, aptuveni " + (weight * 30) + " gramus dienā.";
+            }
+            document.getElementById('result').innerHTML = result;
+        }
+    </script>
+</head>
+
+<body class="barosana">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Sākumlapa</a></li>
+                <li><a class="active" href="barosana.html">Uzturs</a></li>
+                <li><a href="veseliba.html">Veselība</a></li>
+                <li><a href="uzvediba.html">Uzvedība</a></li>
+                <li><a href="iegade.html">Iegāde</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="hero">
+            <h1>Kaķa barošana un uzturs</h1>
+            <p>Pareiza barošana nodrošina veselību un enerģiju ikdienai. Atrodiet labākos uztura risinājumus savam mīlulim.</p>
+        </section>
+        
+            <section class="info-box">
+                <h2>Ievads kaķu uzturā</h2>
+                <p>Vai esat kādreiz aizdomājušies, cik daudz jūsu mīlulim jāēd un kura barība ir vispiemērotākā? Kaķu uzturs
+                    ir svarīgs faktors, kas ietekmē viņu veselību, aktivitāti un pat dzīves ilgumu. Lai nodrošinātu kaķim
+                    labu pašsajūtu, ir nepieciešams izprast viņa uztura vajadzības un izvēlēties atbilstošāko barību.</p>
+                <p>Šajā sadaļā apskatīsim, kā izvēlēties piemērotāko barību un kādas barošanas metodes nodrošina optimālu uzturu jūsu kaķim.</p>
+                </section>
+            <section class="info-block">
+                <h2>Nepieciešamās uzturvielas</h2>
+                <div class="nutrition-container">
+                    <div class="nutrition-text">
+                        <p>Kaķiem kā gaļēdājiem ir nepieciešams:</p>
+                        <ol>
+                            <li><span class="tooltip">Liels olbaltumvielu daudzums
+                                    <span class="tooltiptext">
+                                        <strong>Kāpēc?</strong>
+                                        Olbaltumvielas ir būtiskas kaķu organisma audu veidošanai un atjaunošanai, kā arī
+                                        enzīmu un hormonu sintēzei. Kaķiem ir nepieciešamas daudz olbaltumvielas, jo viņi
+                                        tās izmanto enerģijas ieguvē.
+                                    </span>
+                                </span>
+                            </li>
+                            <li><span class="tooltip">Mērens tauku daudzums
+                                    <span class="tooltiptext">
+                                        <strong>Kāpēc?</strong>
+                                        Tauki dod enerģiju, palīdz uzsūkties taukos šķīstošajiem vitamīniem (A, D, E, K) un
+                                        ir nepieciešami šūnu membrānu veidošanai. </span>
+                                </span>
+                            </li>
+                            <li><span class="tooltip">Minimāls ogļhidrātu daudzums
+                                    <span class="tooltiptext">
+                                        <strong>Kāpēc?</strong>
+                                        Kaķi var izdzīvot bez ogļhidrātiem, jo viņu organisms spēj sintezēt glikozi no
+                                        olbaltumvielām un taukiem. Tomēr neliels ogļhidrātu daudzums var palīdzēt ar
+                                        gremošanu.
+                                    </span>
+                                </span>
+                            </li>
+                            <li><span class="tooltip">Tīrs, svaigs ūdens
+                                    <span class="tooltiptext">
+                                        <strong>Kāpēc?</strong>
+                                        ūdens ir nepieciešams visām dzīvības funkcijām, tostarp gremošanai, asinsritei un
+                                        ķermeņa temperatūras regulēšanai. Kaķi bieži neuzņem pietiekami daudz ūdens, tāpēc
+                                        ir svarīgi nodrošināt tā pieejamību.
+                                    </span>
+                                </span>
+                            </li>
+                            <li><span class="tooltip">Vitamīni un minerālvielas
+                                    <span class="tooltiptext">
+                                        <strong>Kāpēc?</strong>
+                                        Vitamīni un minerālvielas ir nepieciešami dažādiem fizioloģiskiem procesiem, tostap
+                                        imūnsistēmas darbībai, nervu sistēmas darbībai un kaulu veselībai. Kaķiem ir
+                                        nepieciešami specifiski vitamīni, piemēram, A vitamīns.
+                                    </span>
+                                </span>
+                            </li>
+                            <li><span class="tooltip">Taukskābes un aminoskābes
+                                    <span class="tooltiptext">
+                                        <strong>Kāpēc?</strong>
+                                        Taukskābes, piemēram, omega-3 un omega-6 ir svarīgas ādas un kažoka veselībai, kā
+                                        arī iekaisuma mazināšanai. Aminoskābes, piemēram, taurīns, ir būtiskas sirds un
+                                        acu veselībai.
+                                    </span>
+                                </span>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="nutrition-image">
+                        <img src="chartt.png" alt="Kaķu uzturvielu diagramma" class="nutrition-chart">
+                    </div>
+                </div>
+            </section>
+            <section class="info-block">
+                <h2>Kas kaķiem ir kaitīgs</h2>
+                <div class="harmful-container">
+                    <div class="harmful-text">
+                        <p>Bieži vien vēlamies dalīties ar savu māluli un piedāvāt viņam to pašu ēdienu, ko ēdam mēs, taču ne
+                            vienmēr tas ir droši. Daudzi pārtikas produkti, kas ikdienā ir droši cilvēkiem, kaķiem var būt
+                            ļoti bīstami. Izvairies dot savam kaķim:</p>
+                        <ul class="harmful-foods">
+                            <li data-image="chocolate.png"><span class="harmful-item tooltip">Šokolādi
+                                    <span class="tooltiptext">
+                                        <strong>Kāpēc šokolāde ir kaitīga?</strong>
+                                        Šokolāde satur teobromīnu un kofeīnu, kas ir toksiski kaķiem. Jo tumšāka šokolāde,
+                                        jo toksiskāka. Var izraisīt sirds aritmiju, centrālās nervu sistēmas disfunkciju,
+                                        lēkmes un pat nāvi.... </span>
+                                </span>
+                            </li>
+
+                            <li data-image="onion.png"><span class="harmful-item tooltip">Sīpolus un ķiplokus
+                                    <span class="tooltiptext">
+                                        <strong>Kāpēc sīpoli un ķiploki ir kaitīgi?</strong>
+                                        Tie veicina eritrocītu dalīšanos un izraisa anēmiju. Var izraisīt vājumu, apātiju,
+                                        apetītes trūkumu un vemšanu. Indīgas ir visas auga daļas.
+                                    </span>
+                                </span>
+                            </li>
+
+                            <li data-image="grapes.png"><span class="harmful-item tooltip">Vīnogas un rozīnes
+                                    <span class="tooltiptext">
+                                        <strong>Kāpēc vīnogas un rozīnes ir kaitīgas?</strong>
+                                        Izraisa nopietnus nieru bojājumus, kas var novest pie nieru mazspējas. Pat neliels
+                                        daudzums var būt toksisks. Sākotnējās pazīmes ietver vemšanu un caureju.
+                                    </span>
+                                </span>
+                            </li>
+
+                            <li data-image="eggs.png"><span class="harmful-item tooltip">Jēlas olas
+                                    <span class="tooltiptext">
+                                        <strong>Kāpēc jēlas olas ir kaitīgas?</strong>
+                                        Rada risku saindēties ar pārtiku. Olas baltumā esošā olbaltumviela avidīns traucē
+                                        organismam absorbēt B vitamīna biotīnu.
+                                    </span>
+                                </span>
+                            </li>
+
+                            <li data-image="liver.png"><span class="harmful-item tooltip">Aknas lielos daudzumos
+                                    <span class="tooltiptext">
+                                        <strong>Kāpēc aknas lielos daudzumos ir kaitīgas?</strong>
+                                        Var izraisīt A vitamīna toksicitāti, kas var ietekmēt kaķa kaulus un izraisīt
+                                        osteoporozi.
+                                    </span>
+                                </span>
+                            </li>
+
+                            <li data-image="alcohol.png"><span class="harmful-item tooltip">Alkoholu
+                                    <span class="tooltiptext">
+                                        <strong>Kāpēc alkohols ir kaitīgs?</strong>
+                                        Kaķiem alkohola iedarbība ir daudz smagāka nekā cilvēkiem to mazā auguma dēļ. Var
+                                        izraisīt nopietnus orgānu bojājumus.
+                                    </span>
+                                </span>
+                            </li>
+
+                            <li data-image="caffeine.png"><span class="harmful-item tooltip">Kofeīnu
+                                    <span class="tooltiptext">
+                                        <strong>Kāpēc kofeīns ir kaitīgs?</strong>
+                                        Līdzīgi kā alkohols, kofeīna iedarbība kaķiem ir daudz spēcīgāka nekā cilvēkiem.
+                                        Var izraisīt nopietnus veselības traucējumus.
+                                    </span>
+                                </span>
+                            </li>
+
+                            <li data-image="milk.png"><span class="harmful-item tooltip">Pienu
+                                    <span class="tooltiptext">
+                                        <strong>Kāpēc piens ir kaitīgs?</strong>
+                                        Pieaugušiem kaķiem bieži ir laktozes nepanesība. Piena uzņemšana var radīt
+                                        gremošanas traucējumus un diskomfortu.
+                                    </span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="harmful-image">
+                        <img src="" alt="" id="harmfulImage">
+                    </div>
+                </div>
+            </section>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    document.querySelectorAll('.harmful-foods li .tooltip').forEach(item => {  // Corrected selector
+                        item.addEventListener('mouseover', function() {
+                            const imageURL = this.parentNode.dataset.image;
+                            document.getElementById('harmfulImage').setAttribute('src', imageURL);
+                            document.getElementById('harmfulImage').style.opacity = 1;
+                        });
+            
+                        item.addEventListener('mouseout', function() {
+                            document.getElementById('harmfulImage').style.opacity = 0;
+                        });
+                    });
+                });
+            </script>
+            <section class="info-block">
+                <h2>Populārāko kaķu barību salīdzinājums</h2>
+                <p>Latvijā populārākās kaķu barības ir Whiskas, Sheba un Purina. Lai gan tās ir plaši pieejamas un daudzi saimnieki tās izvēlas cenas un pieejamības dēļ, ir svarīgi izprast šo barību sastāvu un to ietekmi uz kaķa veselību.</p>
+                <table class="food-comparison">
+                    <tr>
+                        <th>Zīmols</th>
+                        <th>Olbaltumvielas</th>
+                        <th>Tauki</th>
+                        <th>Šķiedrvielas</th>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.whiskas.lv/" target="_blank">WHISKAS</a></td>
+                        <td>32%</td>
+                        <td>10%</td>
+                        <td>5%</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.sheba.com/" target="_blank">SHEBA</a></td>
+                        <td>35%</td>
+                        <td>12%</td>
+                        <td>4%</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.purina.lv/" target="_blank">PURINA</a></td>
+                        <td>30%</td>
+                        <td>11%</td>
+                        <td>6%</td>
+                    </tr>
+                </table>
+            </section>
+            <section class="info-block">
+                <h2 class="padd">Barošanas biežums</h2>
+                <p class="padd">Kaķa barošanas biežums ir atkarīgs no vairākiem faktoriem, piemēram, vecuma, veselības
+                    stāvokļa un fiziskās aktivitātes līmeņa. Kaķēni aug strauji, un viņiem nepieciešama biežāka barošana,
+                    parasti četras līdz piecas reizes dienā. Pieaugot, viņu ēdienreižu skaits samazinās, un pieaugušam
+                    kaķim parasti pietiek ar divām līdz trīs ēdienreizēm dienā. Tāpat kaķiem ar veselības problēmām vai
+                    īpašām uztura vajadzībām var būt nepieciešama speciāla barība un biežāka barošana, ko nosaka <a
+                        href="veseliba.html#veterinararsts-map" style="text-decoration: underline;">veterinārārsts.</a>
+                    Fiziski aktīvi kaķi, kas daudz skraida un rotaļājas, patērē vairāk enerģijas un attiecīgi arī vairāk
+                    barības nekā mierīgāki, mazkustīgāki kaķi.</p>
+                <ul>
+                    <li><strong>Kaķēni (līdz 6 mēnešiem):</strong> 4-5 reizes dienā</li>
+                    <li><strong>Pieauguši kaķi:</strong> 2-3 reizes dienā</li>
+                </ul>
+                <div class="interactive-tool">
+                    <h3>Barošanas kalkulators</h3>
+                    <p style="text-align: center;">Ievadiet sava kaķa vecumu un svaru, lai uzzinātu ieteicamo barības
+                        daudzumu:</p>
+                    <input type="number" id="age" placeholder="Vecums (mēnešos)" min="0">
+                    <input type="number" id="weight" placeholder="Svars (kg)" min="0">
+                    <button onclick="calculateFeeding()">Aprēķināt</button>
+                    <p id="result"></p>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2025 Murrātava. Veidots ar ❤️ kaķiem un viņu saimniekiem. <a href="contact.html">Sazinies ar
+                mums</a></p>
+    </footer>
+
+</body>
+
 </html>

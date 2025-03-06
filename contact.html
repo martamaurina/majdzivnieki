@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="style.css"/>
+  <title>Sazinies ar mums</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      width: 100%;
+      margin: 50px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+    }
+    .footer {
+      text-align: center;
+      padding: 15px;
+      background: #333;
+      color: white;
+      margin-top: 30px;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Sākumlapa</a></li>
+        <li><a href="barosana.html">Uzturs</a></li>
+        <li><a href="veseliba.html">Veselība</a></li>
+        <li><a href="uzvediba.html">Uzvedība</a></li>
+        <li><a href="iegade.html">Iegāde</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="container">
+    <h1>Sazinies ar mums</h1>
+    <p>Ja Jums ir kādi jautājumi vai ierosinājumi, aizpildiet zemāk esošo formu, un mēs sazināsimies ar jums pēc iespējas ātrāk.</p>
+
+    <form action="https://formsubmit.co/2025murratava@gmail.com" method="POST" class="contact-form">
+      <label for="name">Vārds:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">E-pasts:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Ziņojums:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Sūtīt</button>
+  </form>
+</section>
+
+<footer class="footer">
+  <p>&copy; 2025 Murrātava. Veidots ar ❤️ kaķiem un viņu saimniekiem.</p>
+</footer>
+</body>
+
+</html>
